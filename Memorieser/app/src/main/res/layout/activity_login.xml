@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yoant.memorieser.view.LoginActivity">
+
+    <TextView
+        android:text="Memorieser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/appNameTextField"
+        android:textSize="36sp"
+        android:textStyle="normal|bold|italic"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <TextView
+        android:text="Email :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordTextBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textView4"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:text="Sign In via Facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Sign In via Vkontakte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/background_light"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginBottom="11dp"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Sign In via Google+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/googleSignInButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orTextField"
+        android:textSize="12sp"
+        android:text="_____________________   OR   ____________________"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/googleSignInButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:text="No account yet? Create one!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registrationTextField"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/orTextField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:text="Sign In"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singInButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_below="@+id/passwordTextBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailTextBox"
+        tools:text="example@memorieser.by"
+        android:textColor="@android:color/black"
+        android:singleLine="true"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/appNameTextField"
+        android:layout_alignLeft="@+id/passwordTextBox"
+        android:layout_alignStart="@+id/passwordTextBox" />
+
+    <TextView
+        android:text="Password :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/passwordTextBox"
+        android:layout_alignBottom="@+id/passwordTextBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordTextBox"
+        android:autoText="false"
+        tools:text="Enter your password here"
+        android:layout_below="@+id/emailTextBox"
+        android:layout_alignRight="@+id/orTextField"
+        android:layout_alignEnd="@+id/orTextField" />
+</RelativeLayout>
